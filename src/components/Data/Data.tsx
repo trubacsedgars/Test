@@ -3,13 +3,7 @@ import axios from 'axios';
 import {Button} from "../Button/Button";
 import './Data.css'
 import {useNavigate} from "react-router-dom";
-
-type DataValues = {
-    id: number,
-    document_name: string,
-    created_at: string,
-    field_count: number
-}
+import {DataValues} from "../Interface/Interface";
 
 axios.defaults.baseURL = 'https://dev2.esynergy.lv/'
 
@@ -36,10 +30,10 @@ export const Data = () => {
 
     return (
         <div className="container">
-                <Button
-                    name="Izveidot jaunu dokumenta formu"
-                    onClick={() => navigate('/form')}
-                />
+            <Button
+                name="Izveidot jaunu dokumenta formu"
+                onClick={() => navigate('/form')}
+            />
             {dataValues.map((data) => (
                 <table key={data.id} className="table table-dark table-hover">
                     <thead>
