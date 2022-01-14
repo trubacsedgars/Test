@@ -1,0 +1,14 @@
+.form__label-checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.form__input-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
